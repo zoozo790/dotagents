@@ -13,7 +13,7 @@
 
 Requirements: Bun 1.3+.
 
-Run the guided TUI:
+Run the guided CLI:
 ```bash
 npx @iannuttall/dotagents
 ```
@@ -59,7 +59,7 @@ Global home affects all projects. Project folder only affects the current direct
 
 ## Development
 
-Run the TUI in dev mode:
+Run the CLI in dev mode:
 ```bash
 bun run dev
 ```
@@ -86,7 +86,7 @@ bun run build
 - Skills require a valid `SKILL.md` with `name` + `description` frontmatter.
 - Claude prompt precedence: if `.agents/CLAUDE.md` exists, it links to `.claude/CLAUDE.md`. Otherwise `.agents/AGENTS.md` is used. After adding or removing `.agents/CLAUDE.md`, re-run dotagents and apply/repair links to update the symlink. Factory/Codex always link to `.agents/AGENTS.md`.
 - Project scope creates `.agents`, `.claude`, `.factory`, and `.codex` inside the project (same link layout as global).
-- Backups are stored under `.agents/backup/<timestamp>` and can be restored from the TUI via “Undo last change.”
+- Backups are stored under `.agents/backup/<timestamp>` and can be restored via “Undo last change.”
 
 ## License
 
